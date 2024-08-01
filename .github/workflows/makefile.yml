@@ -17,5 +17,6 @@ jobs:
       run: | 
         echo $(ls -l)
         echo "hello"
+        echo $(git diff --name-only  "*.sql") 
         pip install -r requirements.txt
         sqlfluff lint ./sql/test.sql --dialect bigquery
