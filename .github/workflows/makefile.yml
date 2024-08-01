@@ -17,6 +17,6 @@ jobs:
 
     - name: configure
       run: | 
-        ls -l
+        echo ls -l
         echo "hello"
         pip install pandas
