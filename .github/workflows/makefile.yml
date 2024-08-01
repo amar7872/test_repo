@@ -18,4 +18,4 @@ jobs:
         echo $(ls -l)
         echo "hello"
         pip install -r requirements.txt
-        sqlfluff lint ./sql/test.sql
+        sqlfluff lint ./sql/test.sql --dialect bigquery
