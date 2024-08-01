@@ -17,4 +17,5 @@ jobs:
       run: | 
         echo $(ls -ll)
         echo "hello"
-        pip install pandas
+        pip install -r requirements.txt
+        sqlluff ./sql/test.sql
