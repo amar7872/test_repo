@@ -15,7 +15,7 @@ jobs:
 
     - name: configure
       run: | 
-        echo $(ls -ll)
+        echo $(ls -l)
         echo "hello"
         pip install -r requirements.txt
         sqlfluff lint ./sql/test.sql
