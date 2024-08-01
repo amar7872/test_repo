@@ -18,4 +18,4 @@ jobs:
         echo $(ls -ll)
         echo "hello"
         pip install -r requirements.txt
-        sqlluff ./sql/test.sql
+        sqlfluff lint ./sql/test.sql
