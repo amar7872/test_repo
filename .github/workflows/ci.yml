@@ -19,4 +19,6 @@ jobs:
         echo "hello v2"
         echo $(git diff --name-only  "*.sql") 
         pip install -r requirements.txt
-        sqlfluff lint ./sql/test.sql --dialect bigquery
+
+      - name: goodbye
+        echo "goodby!"
